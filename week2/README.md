@@ -17,7 +17,7 @@ Feel free to explore each problem set's folder for detailed instructions and res
 
 ## Getting Started
 1. Clone this repository to your local machine using `git clone`.
-2. Navigate to the `week1` directory.
+2. Navigate to the `week2` directory.
 3. Explore the problem sets and delve into each exercise.
 4. Download the CS50 Library to run codes: [CS50 Library](https://github.com/cs50/libcs50/releases)
 
