@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // Window Load
+            document.addEventListener('DOMContentLoaded', function() {
+
+                    // Part 1 - Incorrect handling
+                    let incorrect = document.querySelectorAll('#incorrect');
+                    for (let i = 0; i < incorrect.length; i++)
+                    {
+                        incorrect[i].addEventListener('click', function(event) {
+                            incorrect[i].style.backgroundColor = 'red';
+                            document.querySelector('#ans-1').innerHTML = "Incorrect!"
+                        });
+                    }
+
+                    // Part 1 - Correct Handling
+                    let correct = document.querySelector('#correct');
+                    correct.addEventListener('click', function(event) {
+                        correct.style.backgroundColor = 'green';
+                        document.querySelector('#ans-1').innerHTML = "Correct!"
+                    });
+
+                    // Part 2
+                    document.getElementById('submit').addEventListener('click', function() {
+                        let answer = document.getElementById('answer');
+                        if (answer.value == "3.14")
+                        {
+                            answer.style.backgroundColor = 'green';
+                            document.getElementById('ans-2').innerHTML = "Correct!"
+                        }
+                        else
+                        {
+                            answer.style.backgroundColor = 'red';
+                            document.getElementById('ans-2').innerHTML = "Incorrect!"
+                        }
+                    });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>Which one is the most popular programming language in 2023?</h3>
+                <button id="incorrect">Java</button>
+                <button id="incorrect">C++</button>
+                <button id="correct">Python</button>
+                <button id="incorrect">Javascript</button>
+                <button id="incorrect">PHP</button>
+                <p id="ans-1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>What is the value of PI?</h3>
+                <input type="text" name="answer" id="answer" />
+                <button id="submit" type="submit">Submit</button>
+                <p id="ans-2"></p>
+            </div>
+        </div>
+    </body>
+</html>
