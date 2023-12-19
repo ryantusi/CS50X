@@ -1,6 +1,6 @@
 # CS50x: Week 5
 
-Welcome to Week 5 of CS50x: Introduction to Computer Science by Harvard University!
+Welcome to Week 5 of CS50x: Data Structures and Algorithms with C Language
 
 This directory holds problem sets (psets) and lab problems for Week 5. Explore advanced programming concepts with the following exercises:
 
