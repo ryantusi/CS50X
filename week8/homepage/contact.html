@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Contact Page-->
+<html lang="en">
+    <head>
+        <!-- Importing bootstrap, fonts, and setting viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="styles.css" rel="stylesheet">
+        <title>Contact me</title>
+    </head>
+    <body>
+        <header>
+            <!-- Homepage Navigator -->
+            <h1><a href="index.html">My Homepage</a></h1>
+            <h1>My Contact</h1>
+        </header>
+        <main class="contact">
+            <!-- Making the image clickable -->
+            <a href="https://github.com/ryantusi" target="_blank">
+                <img id="github" src="github.jpg" alt="contact" style="cursor: pointer;"/>
+            </a>
+        </main>
+        <footer class="feedback">
+            <!-- Feedback form -->
+            <h1 id="foot">FEEDBACK</h1>
+            <label>Does this pass for my cs50x2023xhomepage?</label>
+            <br>
+            <button class="btn btn-light btn-lg" id="yes" type="submit">Yes</button>
+            <button class="btn btn-light btn-lg" id="no" type="submit">No</button>
+            <p id="response"></p>
+        </footer>
+
+        <!-- Javascript for feedback form handling -->
+        <script>
+            
+            // Response object
+            let res = document.getElementById('response');
+
+            // If yes button clicked
+            document.getElementById('yes').addEventListener('click', function () {
+                res.innerHTML = "I knew it!";
+                alert('That\'s Awesome!');
+            });
+
+            // If no button clicked
+            document.getElementById('no').addEventListener('click', function () {
+                res.innerHTML = "Oh darn it!";
+                alert('I missed something, isn\'t it?');
+            });
+
+        </script>
+    </body>
+</html>
