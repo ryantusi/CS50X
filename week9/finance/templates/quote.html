@@ -1,0 +1,17 @@
+<!-- Layout Extention -->
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <h1>Stock Quotation</h1>
+    <form action="/quote" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="symbol" name="symbol" placeholder="Stock Symbol (eg: NFLX)" type="text" />
+        </div>
+        <button class="btn btn-primary" type="submit">Search</button>
+    </form>
+{% endblock %}
