@@ -1,0 +1,27 @@
+<!-- Layout Extention -->
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted Search
+{% endblock %}
+
+{% block main %}
+    <h3>Search Results </h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Symbol</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            {% for stock in stocks.values() %}
+                <td>{{ stock }}</td>
+            {% endfor %}
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}

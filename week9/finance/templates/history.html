@@ -1,0 +1,39 @@
+<!-- Layout Extention -->
+
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <h1>Transaction History</h1>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Transaction ID</th>
+                <th>Timestamp</th>
+                <th>Stock Name</th>
+                <th>Price</th>
+                <th>No. of Shares</th>
+                <th>Total Valuation</th>
+                <th>Transaction Type</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for trans in transactions %}
+            <tr>
+                <td>{{ trans.trans_id }}</td>
+                <td>{{ trans.timestamp }}</td>
+                <td>{{ trans.stock }}</td>
+                <td>{{ trans.price }}</td>
+                <td>{{ trans.shares }}</td>
+                <td>{{ trans.total_cost }}</td>
+                <td>{{ trans.type }}</td>
+                <!-- <td>{{ trans.user_id }}</td> -->
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
