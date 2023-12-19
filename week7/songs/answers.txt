@@ -1,0 +1,16 @@
+1.  To characterize the audio aura of a listener based on their top 100 songs from 2018.
+    we can consider the average energy, valence, and danceability of these songs.
+    Energy refers to the intensity and activity of the music, valence represents the positivity or happiness of the music, and danceability indicates how suitable the song is for dancing.
+
+    To calculate the audio aura, we would take the average values of energy, valence, and danceability from the top 100 songs in the songs.db database for that specific listener.
+    Let's consider the hypothetical results for this listener based on their 2018 top songs:
+    Average Energy: Medium (The songs are moderately intense and active.)
+    Average Valence: High (The songs are generally positive and happy.)
+    Average Danceability: High (The songs are suitable for dancing.)
+
+2.  The method of calculating the audio aura based on the average energy, valence, and danceability of a listener's top 100 songs might not be very representative due to several limitations:
+    Limited Song Selection, Genre Variability, Temporal Changes, Lack of Context, Neglecting Lyrical Content.
+
+    To create a more representative audio aura, Spotify could consider the following approaches:
+    Fine-Grained Analysis, Genre-Specific Analysis, Incorporate Lyrical Analysis, Long-Term Analysis, User-Driven Customization.
+    By employing these strategies, Spotify could create a more accurate and personalized audio aura, better capturing the listener's emotional nuances and musical preferences.
