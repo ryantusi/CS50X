@@ -78,6 +78,7 @@ Feel free to navigate through the folders corresponding to each week's challenge
 1. Clone this repository to your local machine using `git clone`.
 2. Explore the folders categorized by weeks.
 3. Select a week and dive into the respective psets and lab problems.
+4. For more info on CS50: [click here](https://pll.harvard.edu/course/cs50-introduction-computer-science)
 
 ## Certificate
 ![certificate](CS50x.png)
